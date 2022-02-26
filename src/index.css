@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e96443;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #904e95, #e96443);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #904e95, #e96443);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* debia ser con styled component pero no me funciono entonces lo hice asi */
+.ContenedorHeader{
+  background-color: #26c6da;
+  padding: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family:serif;
+
+}
+.ContenedorHeader h1{
+  font-size: 2rem;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+.contenedor{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contenedorFormulario{
+  background-color: #fff;
+  padding: 3rem;
+  font-family:serif;
+
+}
+.campo{
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.label{
+  flex: 0 00 100px;
+}
+.select{
+display: block;
+width: 100%;
+padding: 1rem;
+border: 1px solid #e1e1e1;
+-webkit-appearance:none ;
+}
+.input{
+  margin: 0 10px;
+}
+.button{
+background-color: #00838f;
+font-size: 16px;
+width: 100%;
+padding: 15px;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+border: none;
+transition: background-color .3s ease;
+margin-top: 1.5rem;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+  font-family:serif;
+
+
+}
+.button:hover{
+  cursor: pointer;
+  background-color: #26c6da;
+
+}
+.alert-error {
+  background-color: red;
+  color:  white;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family:serif;
+
+}
+
+.contenedorResumen{
+  padding: 1rem;
+  text-align: center;
+  background-color: #00838f;
+  color: #fff;
+  margin-top: 1rem;
+  font-family:serif ;
+}
+.mensaje{
+  background-color: rgb(38, 146, 160) ;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: serif;
+
+}
+.resultadoCotizacion{
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #26c6da;
+  background-color:rgb(38, 146, 160);
+  margin-top: 1rem;
+  position: relative;
+}
+.textoCotiacion{
+  color: whitesmoke;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  font-family: serif;
+}
+
+
+/* fin de los stylos con styled conponent que no funciono */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+span.resultado {
+  position: relative;
+  width: 100%;
+}
+
+.resultado-enter {
+  transition: .5s;
+}
+
+.resultado-enter.resultado-enter-active {
+  transform: translateY(0%);
+}
+
+.resultado-exit {
+  transform: translateY(0);
+  transition: .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.resultado-exit-active {
+  opacity: 0;
+  transform: translateY(-10%);
+}
